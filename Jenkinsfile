@@ -3,6 +3,7 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhubCred')
         IMAGE_NAME = 'ahmedsayed7/flask-app'
+        KUBECONFIG = '/opt/jenkins/config'  // Path where you copied kubeconfig
     }
     stages {
         stage('Checkout') {
