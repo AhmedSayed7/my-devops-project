@@ -1,0 +1,7 @@
+replicaCount: 1
+image:
+  repository: ahmedsayed7/flask-app
+  tag: "latest"
+service:
+  type: ClusterIP
+  port: 5000
